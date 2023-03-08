@@ -1,0 +1,17 @@
+/doc
+/test
+/target
+/classes
+/checkouts
+profiles.clj
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+/.lein-*
+/.calva
+/.nrepl-port
+.hgignore
+.hg/
+project.clj
+README.md
