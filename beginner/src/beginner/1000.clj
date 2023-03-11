@@ -2,8 +2,11 @@
 ;; Vanderlei Junior - 2023/03.
 
 ;; Funções Utilizadas:
-; (println): Imprime um ARG e, ao final, pula uma linha.
+;; (println X): Imprime X, pula uma linha
 
 (ns beginner.1000)
 
-(println "Hello World!")
+(defn main []
+  (println "Hello World!"))
+
+(main)

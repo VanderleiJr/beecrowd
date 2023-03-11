@@ -2,14 +2,16 @@
 ;; Vanderlei Junior - 2023/03.
 
 ;; Funções Utilizadas:
-; (println): Imprime um ARG e, ao final, pula uma linha.
+;; (println X): Imprime X, pula uma linha
 ;; (read-line): Lê o valor digitado pelo usuário, retorna sempre no tipo java.lang.String
-;; (format "%.xf"): Formata um número para ter x casas decimais.
-;;; (Float/parseFloat): Converte um ARG para um java.lang.Float
+;; (printf X): Imprime X formatado
+;; (Integer. X): Converte X para um java.lang.Integer
+;; (Float. X): Converte X para um java.lang.Float
 
 (ns beginner.1008)
 
-(println "NUMBER =" (read-line))
-(println "SALARY = U$"
-         (format "%.2f"
-                 (* (Integer/parseInt (read-line)) (Float/parseFloat (read-line)))))
+(defn main []
+  (println "NUMBER =" (read-line))
+  (printf "SALARY = U$ %.2f%n" (* (Integer. (read-line)) (Float. (read-line)))))
+
+(main)
