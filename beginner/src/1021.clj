@@ -3,7 +3,7 @@
 
 ;; Funções Utilizadas:
 ;; (let [X Y]): Copia o dados de Y para o símbolo X
-;; (BigDecimal X): Converte X para um java.math.BigDecimal
+;; (BigDecimal. X): Converte X para um java.math.BigDecimal
 ;; (printf X): Imprime X formatado
 ;; (println X): Imprime X, ao final, pula uma linha
 ;; (loop [X Y] Z): Entre X e Y, se assemelha ao (let). Z irá repetir a cada iteração
@@ -16,7 +16,7 @@
 ;; (recur X): Retorna ao inicio do Loop, levando X
 ;; (not-empty X): Se a coleção X não for vazia, retorna true
 
-(ns beginner.1021
+(ns src.1021
   (:import [java.math BigDecimal]))
 
 (defn separa-moedas [valor-inicial]

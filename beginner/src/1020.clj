@@ -8,7 +8,7 @@
 ;; (quot X Y): Quosciente da divisão de X por Y
 ;; (rem X Y): Resto da divisão de X por Y
 
-(ns beginner.1020)
+(ns src.1020)
 
 (defn main []
   (let [dias (Integer. (read-line))]

@@ -15,7 +15,7 @@
 ;; (printf X): Imprime X formatado
 ;; (println X): Imprime X, ao final, pula uma linha
 
-(ns beginner.1036
+(ns src.1036
   (:require [clojure.string :as str]))
 
 (defn delta [x y z]

@@ -13,7 +13,7 @@
 ;; (even? X): Retorna true se X for par
 ;; (println X): Imprime X, ao final, pula uma linha
 
-(ns beginner.1035
+(ns src.1035
   (:require [clojure.string :as str]))
 
 (defn main []

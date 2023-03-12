@@ -7,7 +7,7 @@
 ;; (read-line): Lê o valor digitado pelo usuário, retorna sempre no tipo java.lang.String
 
 
-(ns beginner.1003)
+(ns src.1003)
 
 (defn main []
   (println "SOMA =" (+ (Integer. (read-line)) (Integer. (read-line)))))

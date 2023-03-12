@@ -12,7 +12,7 @@
 ;; (printf X): Imprime X formatado
 ;; (Math/pow X Y): Exponenciação, X elevado a Y
 
-(ns beginner.1012
+(ns src.1012
   (:require [clojure.string :as str]))
 
 (defn main []

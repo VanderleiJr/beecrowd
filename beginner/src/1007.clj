@@ -7,7 +7,7 @@
 ;; (Integer. X): Converte X para um java.lang.Integer
 ;; (read-line): Lê o valor digitado pelo usuário, retorna sempre no tipo java.lang.String
 
-(ns beginner.1007)
+(ns src.1007)
 
 (defn main []
   (println "DIFERENCA ="

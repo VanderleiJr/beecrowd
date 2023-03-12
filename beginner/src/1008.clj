@@ -8,7 +8,7 @@
 ;; (Integer. X): Converte X para um java.lang.Integer
 ;; (Float. X): Converte X para um java.lang.Float
 
-(ns beginner.1008)
+(ns src.1008)
 
 (defn main []
   (println "NUMBER =" (read-line))

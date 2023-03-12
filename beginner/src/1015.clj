@@ -13,7 +13,7 @@
 ;; (Math/sqrt X): Raiz Quadrada, raiz quadrada de X
 ;; (Math/pow X Y): Exponenciação, X elevado a Y
 
-(ns beginner.1015
+(ns src.1015
   (:require [clojure.string :as str]))
 
 (defn string-to-float [dados]

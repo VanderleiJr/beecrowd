@@ -13,7 +13,7 @@
 ;; (read-line): Lê o valor digitado pelo usuário, retorna tipo java.lang.String
 ;; (printf X): Imprime X formatado
 
-(ns beginner.1010
+(ns src.1010
   (:require [clojure.string :as str]))
 
 (defn return-to-list [dados]

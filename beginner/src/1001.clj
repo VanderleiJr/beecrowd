@@ -6,7 +6,7 @@
 ;; (Integer. X): Converte um X para um java.lang.Integer
 ;; (read-line): Lê o valor digitado pelo usuário, retorna sempre no tipo java.lang.String
 
-(ns beginner.1001)
+(ns src.1001)
 
 (defn main []
   (println "X =" (+ (Integer. (read-line)) (Integer. (read-line)))))

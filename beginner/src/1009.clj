@@ -6,7 +6,7 @@
 ;; (printf X): Imprime X formatado
 ;; (Float. X): Converte X para um java.lang.Float
 
-(ns beginner.1009)
+(ns src.1009)
 
 (defn main []
   (let [_ (read-line)])

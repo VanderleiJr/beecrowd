@@ -4,7 +4,7 @@
 ;; Funções Utilizadas:
 ;; (println X): Imprime X, pula uma linha
 
-(ns beginner.1000)
+(ns src.1000)
 
 (defn main []
   (println "Hello World!"))

@@ -6,7 +6,7 @@
 ;; (Integer. X): Converte X para um java.lang.Integer
 ;; (Float. X): Converte X para um java.lang.Float
 
-(ns beginner.1014)
+(ns src.1014)
 (defn main []
   (printf "%.3f km/l%n"
           (/ (Integer. (read-line)) (Float. (read-line)))))

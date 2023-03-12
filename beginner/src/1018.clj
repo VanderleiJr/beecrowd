@@ -14,7 +14,7 @@
 ;; (rest X): Retorna todos elementos da coleção X, exceto o último
 ;; (recur X): Retorna ao inicio do Loop, levando X
 
-(ns beginner.1018)
+(ns src.1018)
 
 (defn main []
   (let [valor-inicial (Integer. (read-line))]

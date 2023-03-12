@@ -6,7 +6,7 @@
 ;; (Math/pow X Y): Exponenciação, X elevado a Y
 ;; (Float. X): Converte X para um java.lang.Float
 
-(ns beginner.1011)
+(ns src.1011)
 
 (defn main []
   (printf "VOLUME = %.3f%n" (* 4/3

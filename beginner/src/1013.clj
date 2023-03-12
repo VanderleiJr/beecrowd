@@ -11,7 +11,7 @@
 ;; (Integer. X): Converte X para um java.lang.Integer
 ;; (clojure.string/split X Y): Divide a entrada X, utilizando o parametro Y(Regex)
 
-(ns beginner.1013
+(ns src.1013
   (:require [clojure.string :as str]))
 
 (defn main []
