@@ -6,20 +6,9 @@
 
 (defn main []
   (let [tempo (mapv #(Integer. %) (str/split (read-line) #"\s+"))
-        minutos (if (<= (tempo 1) (tempo 3))
-                  (- (tempo 3) (tempo 1))
-                  (- 60 (- (tempo 1) (tempo 3))))
-        horas (cond
-                (< (tempo 0) (tempo 2)) (if (<= (tempo 1) (tempo 3))
-                                          (- (tempo 2) (tempo 0))
-                                          (dec (- (tempo 2) (tempo 0))))
-                (> (tempo 0) (tempo 2)) (if (<= (tempo 1) (tempo 3))
-                                          (- 24 (- (tempo 0) (tempo 2)))
-                                          (- 23 (- (tempo 0) (tempo 2))))
-                :else (cond
-                        (= (tempo 1) (tempo 3)) 24
-                        (> (tempo 1) (tempo 3)) 23
-                        (< (tempo 1) (tempo 3)) 0))]
-    (printf "O JOGO DUROU %d HORA(S) E %d MINUTO(S)%n" horas minutos)))
+        inicio (+ (* (tempo 0) 60) (tempo 1))  ; converte horas e minutos iniciais para minutos
+        fim (+ (* (tempo 2) 60) (tempo 3))     ; converte horas e minutos finais para minutos
+        duracao (if (<= fim inicio) (+ fim 1440 (- inicio)) (- fim inicio))] ; calcula a duração em minutos
+    (println "O JOGO DUROU" (quot duracao 60) "HORA(S) E" (mod duracao 60) "MINUTO(S)")))
 
 (main)
